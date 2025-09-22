@@ -1,5 +1,4 @@
-# QualityNexus:Multimodal DevOps Quality Intelligence 
-— Built on BigQuery
+# QualityNexus:Multimodal DevOps Quality Intelligence — Built on BigQuery
 
 # Problem Statement
 Software engineering organizations lack a trustworthy, timely view of release health because signals live everywhere—code/CI, issue trackers, customer Q&A, release PDFs, and even meeting recordings. In the AI era, coding velocity rises while verification lags, making testing reactive and risk discovery late. At the same time, creating/adapting/maintaining SQL in BigQuery that stitches these sources is hard: queries are schema-coupled, scattered, and rarely reusable.
