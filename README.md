@@ -2,6 +2,7 @@
 
 # Problem Statement
 Software engineering organizations lack a trustworthy, timely view of release health because signals live everywhere—code/CI, issue trackers, customer Q&A, release PDFs, and even meeting recordings. In the AI era, coding velocity rises while verification lags, making testing reactive and risk discovery late. At the same time, creating/adapting/maintaining SQL in BigQuery that stitches these sources is hard: queries are schema-coupled, scattered, and rarely reusable.
+![](./QualityNexus_Overview.png)
 
 # What is QualityNexus
 The QualityNexus turns BigQuery into a multimodal quality plane and adds a BigQuery Assistant for natural-language driven analytics. It’s a reproducible reference system that:
@@ -11,11 +12,13 @@ The QualityNexus turns BigQuery into a multimodal quality plane and adds a BigQu
 - Forecast near-term activity with ML.FORECAST / AI.FORECAST.
 - Assist analysts/engineers with a Natural Language → SQL copilot that automatically generate, executes, summarizes, and logs queries for reuse/governance.
 - Ships as a portable notebook: all steps (ingest → embed → analyze → generate)
+![](./QualityNexus_Architecture.png)
 
 # Innovation - BigQuery Assistant , a Natual Langurage to SQL copilot :
 - Turns questions like “Summarize Lead Time for Changes in 2019” into runnable SQL, which further invoke BigQuery AI.apps.
 - Executes, summarizes, and returns artifacts
 - Logs (dataset, table, question, SQL, summary, timestamp) into a governance query repository table for reuse & audits
+![](./QualityNexus_BigQueryAssistant.png)
 
 # Data sources (Kubernetes 2019 demo):
 - GitHub Archive (dev/test activity, ~300K events)
